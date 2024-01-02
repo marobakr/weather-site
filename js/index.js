@@ -109,7 +109,7 @@ function display(res) {
                   <div class="header-wether p-2">
                     <p class="mb-0">Monday</p>
                   </div>
-                  <div class="body-wether px-3 py-3 text-center">
+                  <div class="body-wether p-0 p-md-3  text-center">
                     <figure class="mb-5 w-75 m-auto">
                       <img class="w-100 " src=${day.day.condition.icon} alt="temp" />
                     </figure>
