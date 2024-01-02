@@ -29,7 +29,7 @@ function getWether(qeury = 'alex') {
   let data = new XMLHttpRequest();
   data.open(
     'GET',
-    `http://api.weatherapi.com/v1/forecast.json?key=${APIKEY}&q=${qeury}&days=7`
+    `https://api.weatherapi.com/v1/forecast.json?key=${APIKEY}&q=${qeury}&days=7`
   );
   data.send();
   data.addEventListener('readystatechange', function () {
