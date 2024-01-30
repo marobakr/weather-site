@@ -293,6 +293,10 @@ footer .subscript {
 footer .social-links a i {
   color: var(--main-color);
 }
+.love-icons {
+  color: var(--main-color);
+
+}
 footer .social-links a {
   display: inline-block;
   padding: 0.9375rem;

@@ -4,6 +4,8 @@ let currentWether = document.getElementById('parent');
 let children = document.getElementById('children');
 let btnClick = document.getElementById('click');
 let inputSearch = document.getElementById('search');
+const currentDate = new Date().getFullYear();
+const yearElement = (document.getElementById('year').innerHTML += currentDate);
 /* Start Navbar */
 
 // Toggle Class Active
