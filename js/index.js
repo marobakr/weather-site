@@ -36,6 +36,7 @@ function getWether(qeury = 'alex') {
     if (data.readyState === 4 && data.status === 200) {
       let res = JSON.parse(data.response);
       display(res);
+      console.log(res);
     }
   });
 }
@@ -51,7 +52,7 @@ function display(res) {
   let [day, month] = dateNow;
   let distract = res.current;
   // Start Dsiplay
-  let data = `   <div class="inner ">
+  let data = `   <div class="inner">
                   <div
                     class="header-wether d-flex justify-content-between align-items-center p-2  "
                   >
@@ -103,6 +104,7 @@ function display(res) {
   historyDays.shift();
   let cartona = ``;
   historyDays.forEach((day) => {
+    console.log(historyDays);
     cartona += `
         <div class=" col-2 child text-center ">
                 <div class="inner ">
@@ -171,7 +173,7 @@ function convertLocalTime(localdata) {
 }
 
 // Get Weather When User Searching
-inputSearch.addEventListener('blur', getInput);
+inputSearch.addEventListener('input', getInput);
 function getInput() {
   let e = inputSearch.value;
   getWether(e);
